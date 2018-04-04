@@ -1,0 +1,1015 @@
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="true">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<title>방부장</title>
+<link rel="stylesheet" type="text/css" href="css/bb_font.css">
+<link rel="stylesheet" type="text/css" href="http://m.bbjang.com/_global/assets/css/bb_default.css">
+<link rel="stylesheet" type="text/css" href="http://m.bbjang.com/_global/assets/css/bb_pop.css">
+<link rel="stylesheet" type="text/css" href="http://m.bbjang.com/_global/assets/css/bb_float_btn.css">
+<link rel="stylesheet" type="text/css" href="css/bb_search.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="header" class="ht_45 header_f search_hd">
+        <div class="btn_back">
+            <a href="#"></a>
+        </div>
+        <h1 class="header_txt">매물 검색</h1>
+        <div class="btn_package">
+            <div class="btn_gohome">
+                <a href="#"><img src="http://image.bbjang.com/imgs/bbjang/img_button/logo_blue.png" alt="홈"></a>
+            </div>
+        </div>
+    </div>
+    <div class="search_container pt_45">
+        <ul class="search_tab">
+            <!-- 활성화된 li에는 class="a_srch_tab" 추가-->
+            <li class="srch_tab">
+                <a href="#">
+                    <span class="srch_txt normal_srch">일반 검색</span>
+                </a>
+            </li>
+            <li class="srch_tab a_srch_tab">
+                <a href="#">
+                    <span class="srch_txt detail_srch">상세 검색</span>
+                </a>
+            </li>
+        </ul>
+        <div class="general_wrap" style="display:none;">
+            <div class="srch_wrap">
+                <div class="query_bar">
+                    <!-- 검색바 터치 시 query_bar_on 추가 -->
+                    <div class="query_srch">
+                        <input type="text" id="srchInput" placeholder="여기에 지역/매물명, 매물번호를 입력하세요">
+                        <!-- .btn_srch_del은 글 입력한 상태에서만 보임 -->
+                        <div id="searchDel" class="srch_btn btn_srch_del">
+                            <a href="#">검색어삭제</a>
+                        </div>
+                        <div id="btnSrchOn" class="srch_btn btn_srch_on">
+                            <a href="#">검색</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 드롭다운 요소(최근검색, 추천검색) -->
+                <!-- 검색바 터치 시 srch_drop_on 추가 -->
+                <div class="srch_drop">
+                    <!-- 최근검색 -->
+                    <ul class="srch_drop_menu" style="display:block;">
+                        <li class="srch_history">
+                            <a href="#" class="history_go">51</a>
+                            <div class="history_del">
+                                <a href="#">검색기록 삭제</a>
+                            </div>
+                        </li>
+                        <li class="srch_history">
+                            <a href="#" class="history_go">매물</a>
+                            <div class="history_del">
+                                <a href="#">검색기록 삭제</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 추천검색 -->
+                    <ul class="srch_drop_menu" style="display:none;">
+                        <li class="srch_rel">
+                            <a href="#" class="srch_go">
+                                <span class="rcm_word">서울</span>
+                            </a>
+                        </li>
+                        <li class="srch_rel">
+                            <a href="#" class="srch_go">
+                                <span class="rcm_word">서울</span> 관악구
+                            </a>
+                        </li>
+                        <li class="srch_rel">
+                            <a href="#" class="srch_go">
+                                <span class="rcm_word">서울</span> 영등포구
+                            </a>
+                        </li>
+                        <li class="srch_rel">
+                            <a href="#" class="srch_go">
+                                <span class="rcm_word">서울</span> 강북구
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--//srch_drop-->
+            </div>
+            <!--//srch_wrap-->
+            <div class="search_list">
+                <div class="gn_list_none" style="display:none;">
+                    <img src="http://image.bbjang.com/imgs/bbjang/search_detail/list_none.png" alt="리스트없음" />
+                    <p class="s_list_none">검색 결과가 없습니다</p>
+                </div>
+                <div class="gn_list">
+                    <div class="gn_filter">
+                        <ul class="filter_btn_wrap">
+                            <li class="filter_l pd_large">
+                                <a href="#"><span class="gn_btn_txt">지역</span></a>
+                            </li>
+                            <li class="filter_l">
+                                <a href="#"><span class="gn_btn_txt">매물종류</span></a>
+                            </li>
+                            <li class="filter_l">
+                                <a href="#"><span class="gn_btn_txt">거래유형</span></a>
+                            </li>
+                        </ul>
+                        <p class="srch_result">검색결과 : <span class="srch_rst_num">2건</span></p>
+                    </div>
+                    <!--일반검색결과리스트-->
+                    <ul id="list_1" class="card_u">
+                        <li class="card_l" id="cardno_10219" data-bang_no="10219" data-bang_lclss="f" data-mem_no="16339">
+                            <div class="main_content">
+                                <div class="main_card_photo">
+                                    <span class="main_bdg_sale photo_badge_position">공인중개사</span>
+                                    <a href="javascript:void(0)">
+                                        <img src="http://photo.bbjang.com/prg/bbImg.php?type=photo&amp;sdir=&amp;viewname=aH-BeYixd4hVcWNlaX1_d4CFeY9ZcGdllrx8sL-5" alt="답 ">
+                                    </a>
+                                </div>
+                                <div class="main_card_content">
+                                    <a href="javascript:void(0)">
+                                        <div class="main_card_title">
+                                            <span class="main_bdg_sale adminWrapOpen" data-bang_no="10219" data-mem_no="16339" data-rpt_cnt="0"><span>토지(땅) &gt; 전/답/녹지/대지</span> - <span>매매</span></span>
+                                        </div>
+                                        <div class="card_price">
+                                            상담요망 </div>
+                                        <div class="card_info">
+                                            <span>｜</span> <span class="area_span">115719.60&nbsp;m<sup>2</sup></span>
+                                        </div>
+                                        <span class="wt_day"><span class="txt_rot">오늘</span></span>
+                                        <div class="main_title_txt">답 </div>
+                                        <div id="cardTxt_10219" class="card_txt">
+                                            투자하기 좋은곳입니다 </div>
+                                        <div class="main_local_txt">
+                                            충남 서산시 고북면 </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card_l" id="cardno_10221" data-bang_no="10221" data-bang_lclss="f" data-mem_no="16339">
+                            <div class="main_content">
+                                <div class="main_card_photo">
+                                    <span class="main_bdg_sale photo_badge_position">공인중개사</span>
+                                    <a href="javascript:void(0)">
+                                        <img src="http://photo.bbjang.com/prg/bbImg.php?type=photo&amp;sdir=&amp;viewname=aH-BeYixd4hVcWNlaX1_d4GIdohdaWSRqne4trY." alt="임야있읍니다 ">
+                                    </a>
+                                </div>
+                                <div class="main_card_content">
+                                    <a href="javascript:void(0)">
+                                        <div class="main_card_title">
+                                            <span class="main_bdg_sale adminWrapOpen" data-bang_no="10221" data-mem_no="16339" data-rpt_cnt="0"><span>토지(땅) &gt; 전/답/녹지/대지</span> - <span>매매</span></span>
+                                        </div>
+                                        <div class="card_price">
+                                            상담요망
+                                        </div>
+                                        <div class="card_info">
+                                            <span>｜</span> <span class="area_span">173165.00&nbsp;m<sup>2</sup></span>
+                                        </div>
+                                        <span class="wt_day"><span class="txt_rot">오늘</span></span>
+                                        <div class="main_title_txt">임야있읍니다 </div>
+                                        <div id="cardTxt_10221" class="card_txt">
+                                            물좋고 공기좋고 조용합니다 </div>
+                                        <div class="main_local_txt">
+                                            충남 청양군 화성면 </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!--//일반검색결과리스트-->
+                </div>
+            </div>
+        </div>
+        <!--//general_wrap 일반검색랩-->
+        <!-- 상세검색 -->
+        <div class="detail_wrap">
+            <div class="detail_container" style="display:none;">
+                <div class="detail_cdt">
+                    <div class="cdt_wrap">
+                        <div class="cdt_area">
+                            <h3 class="cdt_title">상세검색할 <span class="cdt_point">매물종류</span>(1가지)를 선택하세요</h3>
+                            <ul class="sort_place">
+                                <li>
+                                    <input type="radio" name="sort_p" id="sort_p1" class="place_input" checked />
+                                    <label class="sort_label sort01" for="sort_p1">
+                                        아파트
+                                        <div class="chk_sort">체크
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort_p" id="sort_p2" class="place_input" />
+                                    <label class="sort_label sort02" for="sort_p2">
+                                        원룸/오피스텔
+                                        <div class="chk_sort">체크
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort_p" id="sort_p3" class="place_input" />
+                                    <label class="sort_label sort03" for="sort_p3">
+                                        주택
+                                        <div class="chk_sort">체크
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort_p" id="sort_p4" class="place_input" />
+                                    <label class="sort_label sort04" for="sort_p4">
+                                        상가점포
+                                        <div class="chk_sort">체크
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort_p" id="sort_p5" class="place_input" />
+                                    <label class="sort_label sort05" for="sort_p5">
+                                        사무실
+                                        <div class="chk_sort">체크
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort_p" id="sort_p6" class="place_input" />
+                                    <label class="sort_label sort06" for="sort_p6">
+                                        건물
+                                        <div class="chk_sort">체크
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort_p" id="sort_p7" class="place_input" />
+                                    <label class="sort_label sort07" for="sort_p7">
+                                        토지(땅)
+                                        <div class="chk_sort">체크
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort_p" id="sort_p8" class="place_input" />
+                                    <label class="sort_label sort08" for="sort_p8">
+                                        기타
+                                        <div class="chk_sort">체크
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cdt_area">
+                            <h3 class="cdt_title"><span class="cdt_point">상세분류</span> 선택
+                                <div class="btn_dt_sort">
+                                    <a href="#">선택하기</a>
+                                </div>
+                            </h3>
+                            <div class="dt_sort_list">
+                                아파트, 주상복합아파트, 미분양아파트
+                            </div>
+                            <div class="content_exp">
+                                ( ※미선택시 전체선택 )
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cdt_wrap">
+                        <div class="cdt_area">
+                            <h3 class="cdt_title"><span class="cdt_point">검색지역</span> 선택
+                                <div class="btn_dt_sort">
+                                    <a href="#">선택하기</a>
+                                </div>
+                            </h3>
+                            <div class="dt_sort_list">
+                                서울 > 강남구, 서울 > 강동구, 서울 > 강북구
+                            </div>
+                            <div class="content_exp">
+                                ( ※미선택시 전체지역 )
+                            </div>
+                        </div>
+                        <div class="cdt_area">
+                            <h3 class="cdt_title"><span class="cdt_point">거래유형</span>
+                            </h3>
+                            <div class="chk_box4">
+                                <ul class="cdt_chk_type">
+                                    <li>
+                                        <input type="checkbox" name="deal_type" id="deal_01" class="cdt_chk_input" checked />
+                                        <label class="cdt_chk_label" for="deal_01">
+                                            <span class="deal_txt">매매</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="deal_type" id="deal_02" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="deal_02">
+                                            <span class="deal_txt">전세</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="deal_type" id="deal_03" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="deal_03">
+                                            <span class="deal_txt">월세</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="deal_type" id="deal_04" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="deal_04">
+                                            <span class="deal_txt">단기임대</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="cdt_area">
+                            <h3 class="cdt_title"><span class="cdt_point">매매가</span>
+                            </h3>
+                            <div class="chk_box4">
+                                <ul class="cdt_chk_type">
+                                    <li>
+                                        <input type="checkbox" name="price_type" id="price_01" class="cdt_chk_input" checked />
+                                        <label class="cdt_chk_label" for="price_01">
+                                            ~1억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="price_type" id="price_02" class="cdt_chk_input" checked />
+                                        <label class="cdt_chk_label" for="price_02">
+                                            1억~2억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="price_type" id="price_03" class="cdt_chk_input" checked />
+                                        <label class="cdt_chk_label" for="price_03">
+                                            2억~3억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="price_type" id="price_04" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="price_04">
+                                            3억~4억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="price_type" id="price_05" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="price_05">
+                                            4억~5억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="price_type" id="price_06" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="price_06">
+                                            5억~7억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="price_type" id="price_07" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="price_07">
+                                            7억~10억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="price_type" id="price_08" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="price_08">
+                                            10억~
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="cdt_area">
+                            <h3 class="cdt_title"><span class="cdt_point">보증금</span>
+                            </h3>
+                            <div class="chk_box5">
+                                <ul class="cdt_chk_type cdt_btn5">
+                                    <li>
+                                        <input type="checkbox" name="put_price_type" id="put_price_01" class="cdt_chk_input" checked />
+                                        <label class="cdt_chk_label" for="put_price_01">
+                                            ~1천
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="put_price_type" id="put_price_02" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="put_price_02">
+                                            2천
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="put_price_type" id="put_price_03" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="put_price_03">
+                                            3천
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="put_price_type" id="put_price_04" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="put_price_04">
+                                            5천
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="put_price_type" id="put_price_05" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="put_price_05">
+                                            7천
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="put_price_type" id="put_price_06" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="put_price_06">
+                                            1억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="put_price_type" id="put_price_07" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="put_price_07">
+                                            2억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="put_price_type" id="put_price_08" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="put_price_08">
+                                            3억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="put_price_type" id="put_price_09" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="put_price_09">
+                                            5억
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="put_price_type" id="put_price_10" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="put_price_10">
+                                            10억~
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="cdt_area">
+                            <h3 class="cdt_title">
+                                <span class="cdt_point">면적</span>
+                                <div class="area_slct">
+                                    <a href="#">
+                                        <span class="area_txt">평</span>
+                                        <!--<span class="area_txt">㎡</span>-->
+                                    </a>
+                                </div>
+                            </h3>
+                            <div class="chk_box4">
+                                <ul class="cdt_chk_type">
+                                    <li>
+                                        <input type="checkbox" name="area_type" id="area_01" class="cdt_chk_input" checked />
+                                        <label class="cdt_chk_label" for="area_01">
+                                            ~33㎡
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="area_type" id="area_02" class="cdt_chk_input" checked />
+                                        <label class="cdt_chk_label" for="area_02">
+                                            33~66㎡
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="area_type" id="area_03" class="cdt_chk_input" checked />
+                                        <label class="cdt_chk_label" for="area_03">
+                                            66~99㎡
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="area_type" id="area_04" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="area_04">
+                                            99~132㎡
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="area_type" id="area_05" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="area_05">
+                                            132~165㎡
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="area_type" id="area_06" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="area_06">
+                                            165~198㎡
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="area_type" id="area_07" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="area_07">
+                                            198~231㎡
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="area_type" id="area_08" class="cdt_chk_input" />
+                                        <label class="cdt_chk_label" for="area_08">
+                                            231㎡~
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="cdt_wrap">
+                        <div class="cdt_area under_bd">
+                            <a href="#" class="cdt_a">
+                                <h3 class="cdt_title">
+                                    <span class="cdt_point">입주가능일</span>
+                                    <div class="f_area">
+                                        <span class="result_vl">상관없음</span>
+                                        <img src="http://image.bbjang.com/imgs/bbjang/search_detail/fold_btn.png" class="f_fold_btn f_exp_btn" />
+                                    </div>
+                                </h3>
+                                <div class="chk_box4">
+                                    <ul class="cdt_chk_type hg_expand">
+                                        <li>
+                                            <input type="radio" name="date_type" id="date_01" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="date_01">
+                                                상관없음
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="date_type" id="date_02" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label ex_line2" for="date_02">
+                                                <p class="pd_line2">1개월이내</p>
+                                                <p class="imd_go">(즉시입주포함)</p>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="date_type" id="date_03" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="date_03">
+                                                2개월이내
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="date_type" id="date_04" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="date_04">
+                                               2개월이후
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </a>
+                        </div>
+                        <div class="cdt_area under_bd">
+                            <a href="#" class="cdt_a">
+                                <h3 class="cdt_title">
+                                    <span class="cdt_point">방 개수</span>
+                                    <div class="f_area">
+                                        <span class="result_vl">1개~3개</span>
+                                        <img src="http://image.bbjang.com/imgs/bbjang/search_detail/fold_btn.png" class="f_fold_btn f_exp_btn" />
+                                    </div>
+                                </h3>
+                                <div class="chk_box5">
+                                    <ul class="cdt_chk_type cdt_btn5">
+                                        <li>
+                                            <input type="checkbox" name="room_type" id="room_01" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="room_01">
+                                                상관없음
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="room_type" id="room_02" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="room_02">
+                                                1개
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="room_type" id="room_03" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="room_03">
+                                                2개
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="room_type" id="room_04" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="room_04">
+                                                3개
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="room_type" id="room_05" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="room_05">
+                                               4개 이상
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </a>
+                        </div>
+                        <div class="cdt_area under_bd">
+                            <a href="#" class="cdt_a">
+                                <h3 class="cdt_title">
+                                    <span class="cdt_point">욕실 수</span>
+                                    <div class="f_area">
+                                        <span class="result_vl">1개~2개</span>
+                                        <img src="http://image.bbjang.com/imgs/bbjang/search_detail/fold_btn.png" class="f_fold_btn f_exp_btn" />
+                                    </div>
+                                </h3>
+                                <div class="chk_box5">
+                                    <ul class="cdt_chk_type cdt_btn5">
+                                        <li>
+                                            <input type="checkbox" name="bath_type" id="bath_01" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="bath_01">
+                                                상관없음
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="bath_type" id="bath_02" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="bath_02">
+                                                1개
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="bath_type" id="bath_03" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="bath_03">
+                                                2개
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="bath_type" id="bath_04" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="bath_04">
+                                                3개
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="bath_type" id="bath_05" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="bath_05">
+                                               4개 이상
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </a>
+                        </div>
+                        <div class="cdt_area under_bd">
+                            <a href="#" class="cdt_a">
+                                <h3 class="cdt_title">
+                                    <span class="cdt_point">세대 수</span>
+                                    <div class="f_area">
+                                        <span class="result_vl">상관없음</span>
+                                        <img src="http://image.bbjang.com/imgs/bbjang/search_detail/fold_btn.png" class="f_fold_btn f_exp_btn" />
+                                    </div>
+                                </h3>
+                                <div class="chk_box4">
+                                    <ul class="cdt_chk_type">
+                                        <li>
+                                            <input type="radio" name="gen_type" id="gen_01" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="gen_01">
+                                                상관없음
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="gen_type" id="gen_02" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label long_lt" for="gen_02">
+                                                100세대 이상
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="gen_type" id="gen_03" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label long_lt" for="gen_03">
+                                                500세대 이상
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="gen_type" id="gen_04" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label long_lt" for="gen_04">
+                                               1000세대 이상
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </a>
+                        </div>
+                        <div class="cdt_area under_bd">
+                            <a href="#" class="cdt_a">
+                                <h3 class="cdt_title">
+                                    <span class="cdt_point">세대당 주차대수</span>
+                                    <div class="f_area">
+                                        <span class="result_vl">1대 이상</span>
+                                        <img src="http://image.bbjang.com/imgs/bbjang/search_detail/fold_btn.png" class="f_fold_btn f_exp_btn" />
+                                    </div>
+                                </h3>
+                                <div class="chk_box4">
+                                    <ul class="cdt_chk_type">
+                                        <li>
+                                            <input type="radio" name="parking_type" id="parking_01" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="parking_01">
+                                                상관없음
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="parking_type" id="parking_02" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="parking_02">
+                                                0.5대 이상
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="parking_type" id="parking_03" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="parking_03">
+                                                1대 이상
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="parking_type" id="parking_04" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="parking_04">
+                                               1.5대 이상
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </a>
+                        </div>
+                        <div class="cdt_area under_bd">
+                            <a href="#" class="cdt_a">
+                                <h3 class="cdt_title">
+                                    <span class="cdt_point">층 수</span>
+                                    <div class="f_area">
+                                        <span class="result_vl">1층~중간층</span>
+                                        <img src="http://image.bbjang.com/imgs/bbjang/search_detail/fold_btn.png" class="f_fold_btn f_exp_btn" />
+                                    </div>
+                                </h3>
+                                <div class="chk_box5">
+                                    <ul class="cdt_chk_type cdt_btn5">
+                                        <li>
+                                            <input type="checkbox" name="floor_type" id="floor_01" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="floor_01">
+                                                상관없음
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="floor_type" id="floor_02" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="floor_02">
+                                                1층
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="floor_type" id="floor_03" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="floor_03">
+                                                저층
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="floor_type" id="floor_04" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="floor_04">
+                                                중간층
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="floor_type" id="floor_05" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="floor_05">
+                                               고층
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <p class="floor_exp">※ 저층: 2~5층, 중간층: 6~10층, 고층:10층 이상</p>
+                            </a>
+                        </div>
+                        <div class="cdt_area under_bd">
+                            <a href="#" class="cdt_a">
+                                <h3 class="cdt_title">
+                                    <span class="cdt_point">준공연도</span>
+                                    <div class="f_area">
+                                        <span class="result_vl">5년~10년 이내</span>
+                                        <img src="http://image.bbjang.com/imgs/bbjang/search_detail/fold_btn.png" class="f_fold_btn f_exp_btn" />
+                                    </div>
+                                </h3>
+                                <div class="chk_box3">
+                                    <ul class="cdt_chk_type cdt_btn3">
+                                        <li>
+                                            <input type="checkbox" name="build_type" id="build_01" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="build_01">
+                                                상관없음
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="build_type" id="build_02" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="build_02">
+                                                5년 이내
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="build_type" id="build_03" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="build_03">
+                                                5년 ~ 10년
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="build_type" id="build_04" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="build_04">
+                                               10년 ~ 20년
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="build_type" id="build_05" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="build_05">
+                                               20년 ~ 30년
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="build_type" id="build_06" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label" for="build_06">
+                                               30년 이상
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </a>
+                        </div>
+                        <div class="cdt_area">
+                            <a href="#" class="cdt_a">
+                                <h3 class="cdt_title">
+                                    <span class="cdt_point">등록자 구분</span>
+                                    <div class="f_area">
+                                        <span class="result_vl">상관없음, 개인</span>
+                                        <img src="http://image.bbjang.com/imgs/bbjang/search_detail/fold_btn.png" class="f_fold_btn f_exp_btn" />
+                                    </div>
+                                </h3>
+                                <div class="chk_box5">
+                                    <ul class="cdt_chk_type cdt_btn5 hg_expand">
+                                        <li>
+                                            <input type="checkbox" name="rgst_type" id="rgst_01" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="rgst_01">
+                                                상관없음
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="rgst_type" id="rgst_02" class="cdt_chk_input" checked />
+                                            <label class="cdt_chk_label" for="rgst_02">
+                                                개인
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="rgst_type" id="rgst_03" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label long_lt" for="rgst_03">
+                                               공인중개사
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="rgst_type" id="rgst_04" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label ex_line2" for="rgst_04">
+                                                <p class="pd_line2">건설회사</p>
+                                                <p class="imd_go">(분양/대행)</p>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="rgst_type" id="rgst_05" class="cdt_chk_input" />
+                                            <label class="cdt_chk_label long_lt" for="rgst_05">
+                                               법인부동산
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cdt_finish">
+                    <a href="#" class="surf_btn surf_pp"><span class="surf_bg">위 조건으로 검색하기</span></a>
+                </div>
+            </div>
+            <!--//detail_container 상세검색조건선택-->
+            <div class="dt_result_container">
+                <div class="surf_list">
+                    <div class="cd_wrap">
+                        <div class="cd_condition">
+                            #원룸/오피스텔
+                        </div>
+                        <div class="cd_condition">
+                            #매매, 전세, 월세, 단기임대
+                        </div>
+                        <div class="cd_condition">
+                            #7억 10억이상
+                        </div>
+                        <div class="cd_condition">
+                            #10억 이상
+                        </div>
+                        <div class="cd_condition">
+                            #198~198㎡
+                        </div>
+                        <div class="cd_condition">
+                            #1개월 이내(즉시입주포함)
+                        </div>
+                        <div class="cd_condition">
+                            #1개~4개 이상
+                        </div>
+                        <div class="cd_condition">
+                            #1000세대 이상
+                        </div>
+                        <div class="cd_condition">
+                            #1.5대 이상
+                        </div>
+                        <div class="cd_condition">
+                            #1층~중간층
+                        </div>
+                        <div class="cd_condition">
+                            #20년~30년
+                        </div>
+                        <div class="cd_condition">
+                            #건설회사(분양/대행)
+                        </div>
+                    </div>
+                </div>
+                <div class="search_list">
+                    <div class="gn_list_none" style="display:none;">
+                        <img src="http://image.bbjang.com/imgs/bbjang/search_detail/list_none.png" alt="리스트없음" />
+                        <p class="s_list_none">검색 결과가 없습니다</p>
+                    </div>
+                    <div class="gn_list">
+                        <div class="gn_filter">
+                            <div class="dt_btn_wrap">
+                                <div class="btn_cdt_set">
+                                    <a href="#">
+                                        <span class="btn_cdt_txt">검색조건 변경</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="srch_result">검색결과 : <span class="srch_rst_num">2건</span></p>
+                        </div>
+                        <!--일반검색결과리스트-->
+                        <ul id="list_1" class="card_u">
+                            <li class="card_l" id="cardno_10219" data-bang_no="10219" data-bang_lclss="f" data-mem_no="16339">
+                                <div class="main_content">
+                                    <div class="main_card_photo">
+                                        <span class="main_bdg_sale photo_badge_position">공인중개사</span>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://photo.bbjang.com/prg/bbImg.php?type=photo&amp;sdir=&amp;viewname=aH-BeYixd4hVcWNlaX1_d4CFeY9ZcGdllrx8sL-5" alt="답 ">
+                                        </a>
+                                    </div>
+                                    <div class="main_card_content">
+                                        <a href="javascript:void(0)">
+                                            <div class="main_card_title">
+                                                <span class="main_bdg_sale adminWrapOpen" data-bang_no="10219" data-mem_no="16339" data-rpt_cnt="0"><span>토지(땅) &gt; 전/답/녹지/대지</span> - <span>매매</span></span>
+                                            </div>
+                                            <div class="card_price">
+                                                상담요망 </div>
+                                            <div class="card_info">
+                                                <span>｜</span> <span class="area_span">115719.60&nbsp;m<sup>2</sup></span>
+                                            </div>
+                                            <span class="wt_day"><span class="txt_rot">오늘</span></span>
+                                            <div class="main_title_txt">답 </div>
+                                            <div id="cardTxt_10219" class="card_txt">
+                                                투자하기 좋은곳입니다 </div>
+                                            <div class="main_local_txt">
+                                                충남 서산시 고북면 </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card_l" id="cardno_10221" data-bang_no="10221" data-bang_lclss="f" data-mem_no="16339">
+                                <div class="main_content">
+                                    <div class="main_card_photo">
+                                        <span class="main_bdg_sale photo_badge_position">공인중개사</span>
+                                        <a href="javascript:void(0)">
+                                            <img src="http://photo.bbjang.com/prg/bbImg.php?type=photo&amp;sdir=&amp;viewname=aH-BeYixd4hVcWNlaX1_d4GIdohdaWSRqne4trY." alt="임야있읍니다 ">
+                                        </a>
+                                    </div>
+                                    <div class="main_card_content">
+                                        <a href="javascript:void(0)">
+                                            <div class="main_card_title">
+                                                <span class="main_bdg_sale adminWrapOpen" data-bang_no="10221" data-mem_no="16339" data-rpt_cnt="0"><span>토지(땅) &gt; 전/답/녹지/대지</span> - <span>매매</span></span>
+                                            </div>
+                                            <div class="card_price">
+                                                상담요망
+                                            </div>
+                                            <div class="card_info">
+                                                <span>｜</span> <span class="area_span">173165.00&nbsp;m<sup>2</sup></span>
+                                            </div>
+                                            <span class="wt_day"><span class="txt_rot">오늘</span></span>
+                                            <div class="main_title_txt">임야있읍니다 </div>
+                                            <div id="cardTxt_10221" class="card_txt">
+                                                물좋고 공기좋고 조용합니다 </div>
+                                            <div class="main_local_txt">
+                                                충남 청양군 화성면 </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--//상세검색결과리스트-->
+                    </div>
+                </div>
+                <!--//search_list 상세검색-->
+            </div>
+            <!--//dt_result_container 상세검색결과리스트랩-->
+        </div>
+        <!--//detail_wrap 상세검색랩-->
+    </div>
+    <!--//search_container-->
+    <div class="pop_wrap" style="display:none;">
+        <div class="pop_modal"></div>
+            <div class="guide_box">
+               <a href="#" class="guide_clse">
+                <div class="normal_guide">
+                    매물 종류 상관없이<br><span class="normal_point">지역/장소명, 매물번호</span>로<br>검색할 수 있어요!
+                </div>
+                <div class="detail_guide">
+                    특정 매물종류에 대해<br><span class="detail_point">가격/면적 등 상세조건</span>으로<br>검색할 수 있어요!
+                </div>
+                <div class="guide_close">
+                    <span class="guide_txt">다시 보지 않기</span>
+                </div>
+                </a>
+            </div>
+    </div>
+</div>
+<!--//wrap-->
+</body>
+</html>
